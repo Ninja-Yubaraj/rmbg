@@ -4,12 +4,12 @@ Simple self hosted [remove.bg](https://www.remove.bg) alternative using [Rembg](
 
 ## 🔧 Quick Start
 
-### Prerequisites
+### Docker
+```bash
+docker run -dt -p 5100:5100 ninjayubaraj/rmbg:latest
+```
 
-Ensure you have Python (≥ 3.x) installed.
-If using Docker, ensure Docker is installed.
-
-### Running locally
+### locally
 ```bash
 git clone https://github.com/Ninja-Yubaraj/rmbg.git  
 cd rmbg
@@ -19,7 +19,7 @@ python3 app.py
 
 > Then open your browser at `http://127.0.0.1:5100` (or as indicated) and try uploading an image.
 
-### Running with Python Virtual Environment
+### Python Virtual Environment
 ```bash
 git clone https://github.com/Ninja-Yubaraj/rmbg.git  
 cd rmbg
@@ -39,7 +39,7 @@ python3 app.py
 2. Run the container:
 
    ```bash
-   docker run -p 5100:5100 rmbg
+   docker run -dt -p 5100:5100 rmbg
    ```
 3. Visit `http://localhost:5100` in your browser.
 
